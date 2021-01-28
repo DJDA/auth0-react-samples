@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {%- auth0:head -%}
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+
+    <!-- If League B2B App -->
+    {% if application.id == "Y1NZeujqJApCVWuf0jjnuS3invR1KiGt" %}
+    <link
+      href="https://app.league.com/css/league.pages.account-page.css?view=league.views.account.sign-in&version=d1aa1d5e9578efa08564e243e4c20f35"
+      rel="stylesheet"
+    />
+    <style>
+      h1.sign-in-h1 {
+        display: flex;
+        align-self: flex-start;
+        margin-left: 12.5%;
+        z-index: 999999;
+        margin-bottom: -50px;
+      }
+    </style>
+    <style>
+      body a {
+        color: #5122d1;
+      }
+    </style>
+    <style>
+      .logo-header {
+        display: flex;
+        align-self: flex-start;
+        margin-left: 12.5%;
+        margin-bottom: 48px;
+      }
+      .league-logo {
+        background-repeat: no-repeat;
+        background-image: url(https://app.league.com/static/94fb98f0.svg);
+        background-size: 100%;
+        background-position: center center;
+        height: 40px;
+        width: 134px;
+      }
+    </style>
+    <style>
+      @media screen and (min-width: 1025px) {
+        body {
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-image: url(https://app.league.com/static/cfff2997.svg);
+          background-position: right;
+          background-size: auto 100%;
+        }
+        .prompt-wrapper {
+          margin-left: 12.5%;
+          width: 600px;
+          -webkit-transform: scale(0.85);
+          -moz-transform: scale(0.85);
+          -ms-transform: scale(0.85);
+          transform: scale(0.85);
+        }
+        ._prompt-box-outer {
+          width: 530px;
+        }
+      }
+    </style>
+    <!-- remove the box shadow from the login-box -->
+    <style>
+      section._prompt-box-outer div {
+        box-shadow: none;
+      }
+    </style>
+    <!-- remove the link to Auth0 at the bottom of the login box, that we have because we're on a "free" plan -->
+    <style>
+      section._prompt-box-outer a[href="https://auth0.com/?utm_source=lock&utm_campaign=badge&utm_medium=widget"]
+      {
+        display: none;
+      }
+    </style>
+    <style>
+      .prompt-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        background-color: transparent;
+      }
+    </style>
+
+    {% elsif application.id == == "wyvslER2Zn1YP3xyImRmAzCFyzqkfHLd" %}
+    <title>PC Health</title>
+    <link
+      href="https://fast.fonts.net/cssapi/814ed7a5-c336-46ae-bd69-2e447899aa2f.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fast.fonts.net/cssapi/814ed7a5-c336-46ae-bd69-2e447899aa2f.css"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Offering real-time care with a team of trusted healthcare providers at our virtual clinic. Get online advice from our experts to help navigate your healthcare needs, including registered Nurses and Dietitians – all for free. Plus, you can earn PC Optimum points™ when you complete daily health activities.
+"
+    />
+    <meta property="og:url" content="//www.pchealth.ca//" />
+    <link rel="canonical" href="//www.pchealth.ca//" />
+    <meta
+      name="keywords"
+      content="virtual clinic,online advice,registered nurses,dietitian,healthcare,medical advice,health coach,PC Optimum,President’s Choice"
+    />
+    <meta
+      property="og:description"
+      content="Introducing the PC Health app. Get real-time virtual care from trusted healthcare providers — for free. Chat with registered nurses and dietitians, and earn PC Optimum™ points for completing daily health activities."
+    />
+    <meta property="og:title" content="Download the PC Health App" />
+    <meta
+      property="og:image"
+      content="//images.ctfassets.net/y9kx4mbdq4n2/6l4vF6zWdtRUDVPDms3xsz/a04420cdb41be20a71c23bd7a8ccca29/Roadrunner_OGImage_EN.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="//images.ctfassets.net/y9kx4mbdq4n2/4aSfMY16iKrfaTsdUTbMAi/878b739c15b246e2448629444f16316b/Mask_Group__1_.png?fm=png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="//images.ctfassets.net/y9kx4mbdq4n2/4aSfMY16iKrfaTsdUTbMAi/878b739c15b246e2448629444f16316b/Mask_Group__1_.png?w=192&amp;fm=png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="//images.ctfassets.net/y9kx4mbdq4n2/4aSfMY16iKrfaTsdUTbMAi/878b739c15b246e2448629444f16316b/Mask_Group__1_.png?w=96&amp;fm=png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="//images.ctfassets.net/y9kx4mbdq4n2/4aSfMY16iKrfaTsdUTbMAi/878b739c15b246e2448629444f16316b/Mask_Group__1_.png?w=32&amp;fm=png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="//images.ctfassets.net/y9kx4mbdq4n2/4aSfMY16iKrfaTsdUTbMAi/878b739c15b246e2448629444f16316b/Mask_Group__1_.png?w=16&amp;fm=png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="//images.ctfassets.net/y9kx4mbdq4n2/4aSfMY16iKrfaTsdUTbMAi/878b739c15b246e2448629444f16316b/Mask_Group__1_.png?w=180&amp;fm=png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="//images.ctfassets.net/y9kx4mbdq4n2/4aSfMY16iKrfaTsdUTbMAi/878b739c15b246e2448629444f16316b/Mask_Group__1_.png?w=152&amp;fm=png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="//images.ctfassets.net/y9kx4mbdq4n2/4aSfMY16iKrfaTsdUTbMAi/878b739c15b246e2448629444f16316b/Mask_Group__1_.png?w=144&amp;fm=png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="//images.ctfassets.net/y9kx4mbdq4n2/4aSfMY16iKrfaTsdUTbMAi/878b739c15b246e2448629444f16316b/Mask_Group__1_.png?w=114&amp;fm=png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="//images.ctfassets.net/y9kx4mbdq4n2/4aSfMY16iKrfaTsdUTbMAi/878b739c15b246e2448629444f16316b/Mask_Group__1_.png?w=120&amp;fm=png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="//images.ctfassets.net/y9kx4mbdq4n2/4aSfMY16iKrfaTsdUTbMAi/878b739c15b246e2448629444f16316b/Mask_Group__1_.png?w=76&amp;fm=png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="//images.ctfassets.net/y9kx4mbdq4n2/4aSfMY16iKrfaTsdUTbMAi/878b739c15b246e2448629444f16316b/Mask_Group__1_.png?w=60&amp;fm=png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="//images.ctfassets.net/y9kx4mbdq4n2/4aSfMY16iKrfaTsdUTbMAi/878b739c15b246e2448629444f16316b/Mask_Group__1_.png?w=57&amp;fm=png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="//images.ctfassets.net/y9kx4mbdq4n2/4aSfMY16iKrfaTsdUTbMAi/878b739c15b246e2448629444f16316b/Mask_Group__1_.png?fm=png"
+    />
+    <meta name="apple-mobile-web-app-title" content="PC Health" />
+    <!-- Globals -->
+    <style>
+      * {
+        font-family: "Noir W00 Regular";
+      }
+      .pchealth_welcomeh1 {
+        font-size: 24px;
+        padding-bottom: 100px;
+        font-family: "Noir W00 Regular";
+      }
+      @media screen and (min-width: 1025px) {
+        .pchealth_welcomeh1 {
+          font-size: 48px;
+          padding-bottom: 100px;
+          font-family: "Noir W00 Regular";
+        }
+      }
+    </style>
+
+    <!-- PC Health Header -->
+    <style>
+      .pchealth_header_fixed {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 2000px;
+        border-bottom: 4px solid #c1c7d0;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      .pchealth_header {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        width: 1248px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header_logowrapper {
+        display: flex;
+        padding-left: 25px;
+      }
+      .pchealth_downloadbuttonwrapper {
+        display: flex;
+        padding-right: 25px;
+      }
+      .pchealth_downloadbutton {
+        background-color: rgb(47, 69, 97);
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        font-family: "Noir W00 Regular", Helvetica, sans-serif;
+        font-size: 16px;
+        height: 42px;
+        letter-spacing: 0.5px;
+        line-height: 16px;
+        padding-bottom: 13px;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 13px;
+      }
+    </style>
+
+    <!-- PC Health Main Section-->
+    <style>
+      .pchealth_main {
+        padding-top: 70px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 2000px;
+        background-color: #d9ebf9;
+        min-height: 550px;
+      }
+    </style>
+
+    <!-- PC Health Login Box-->
+    <style>
+      h1.sign-in-h1 {
+        font-family: "Noir W00 Regular";
+      }
+    </style>
+    <style>
+      ._prompt-box-outer div {
+        background-color: transparent;
+      }
+      ._prompt-box-outer button {
+        background-color: #333;
+        color: white;
+      }
+      ._prompt-box-outer button:hover {
+        background-color: #888;
+        color: white;
+      }
+      .prompt-wrapper {
+      }
+      @media screen and (min-width: 1025px) {
+        .prompt-wrapper {
+          margin-left: 12.5%;
+          width: 600px;
+          -webkit-transform: scale(0.85);
+          -moz-transform: scale(0.85);
+          -ms-transform: scale(0.85);
+          transform: scale(0.85);
+        }
+      }
+    </style>
+    <!-- remove the box shadow from the login-box -->
+    <style>
+      section._prompt-box-outer div {
+        box-shadow: none;
+      }
+    </style>
+    <!-- remove the link to Auth0 at the bottom of the login box, that we have because we're on a "free" plan -->
+    <style>
+      section._prompt-box-outer a[href="https://auth0.com/?utm_source=lock&utm_campaign=badge&utm_medium=widget"]
+      {
+        display: none;
+      }
+    </style>
+    <style>
+      .login-header {
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        z-index: 999999;
+        justify-content: left;
+        font-size: 32px;
+      }
+      .pchealth_wave_mask {
+        right: 0;
+        bottom: 0;
+        position: absolute;
+      }
+      .pchealth_main_row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    </style>
+    {%- endif -%}
+  </head>
+
+  <!-- If League B2B App -->
+  {% if application.id == "Y1NZeujqJApCVWuf0jjnuS3invR1KiGt" %}
+  <body class="_hide-prompt-logo">
+    <div class="prompt-wrapper">
+      <div class="logo-header">
+        <a class="league-logo" href="/"></a>
+      </div>
+      <h1 class="sign-in-h1">Sign in to League</h1>
+      {%- auth0:widget -%}
+    </div>
+  </body>
+  {% elsif application.id == == "wyvslER2Zn1YP3xyImRmAzCFyzqkfHLd" %}
+  <body class="_hide-prompt-logo">
+    <div class="pchealth_header_fixed">
+      <div class="pchealth_header">
+        <div class="header_logowrapper">
+          <img
+            src="https://images.ctfassets.net/y9kx4mbdq4n2/4IEIPOAJQeanZ0BI0b9eKG/ca4aa09c5d36109d33626998ca435988/PC_health_2_2x.png?fm=webp&w=135"
+          />
+        </div>
+        <div class="pchealth_downloadbuttonwrapper">
+          <a class="pchealth_downloadbutton">Download</a>
+        </div>
+      </div>
+    </div>
+    <section class="pchealth_main">
+      <div class="pchealth_main_row">
+        <div class="prompt-wrapper">
+          <div style="display: flex">
+            <div style="justify-self: center; padding: 0 35px 0 35px;">
+              <h1 class="pchealth_welcomeh1">
+                Get Care. Get Healthy. Get PC Optimum Points.
+              </h1>
+            </div>
+          </div>
+          <div style="display: flex; padding: 0 35px 0 35px;">
+            <div class="login-header">
+              <svg
+                aria-hidden="false"
+                focusable="false"
+                class="sprite layout__pcid-logo"
+                alt="PCid Logo"
+                role="presentation"
+                viewBox="0 0 96 50"
+                style="height: 1.25em"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <path
+                    fill="#333"
+                    d="M48.655 15.979c3.5.042 6.008 2.7 6.057 6.425v23.632c0 .54-.056 1.061-.091 1.764H42.514V22.474c.007-3.845 2.57-6.544 6.141-6.495zm-.063-3.831a5.855 5.855 0 006.029-5.94c.113-3.313-2.486-6.09-5.806-6.204a6.01 6.01 0 00-6.217 5.794 6.073 6.073 0 000 .41 5.903 5.903 0 005.994 5.94"
+                  />
+                  <path
+                    fill="#333"
+                    d="M17.777 37.139a5.904 5.904 0 01-6.02-5.784c-.002-.052-.002-.104-.002-.156a6.008 6.008 0 015.806-6.204 6.01 6.01 0 016.217 6.204 5.854 5.854 0 01-6.001 5.94zM34.419.081H22.341V14.14h-5.268c-6.888 0-11.854 3.38-14.917 9.271-3.064 5.89-2.684 11.95 1.148 17.573a17.271 17.271 0 0018.931 6.572c7.275-2.024 11.973-7.732 12.213-15.738L34.419.08z"
+                    mask="url(#b)"
+                    transform="translate(60.085 .37)"
+                  />
+                  <path
+                    fill="#EE1E29"
+                    d="M3.355 47.8h29.06V.452H3.354z"
+                    mask="url(#d)"
+                  />
+                  <path
+                    fill="#EE1E29"
+                    d="M15.377 28.055a22.412 22.412 0 002.261 5.933c.17.239 1.564 1.975.317-1.961a9.9 9.9 0 00-2.578-3.972m4.261-12.463a8.086 8.086 0 00-1.408 4.794 6.318 6.318 0 001.408-4.794m-1.035-1.476c-1.697-1.406-4.79-.52-6.339-.126a46.156 46.156 0 00-5.845 2.017c-.916.422-1.627.808-2.409 1.216-.62.316-2.113.998-.852 1.694a25.4 25.4 0 002.486 1.118c1.268.541 3.036 1.244 3.838 1.595.992.43 1.954.923 2.881 1.476 1.254-.702 1.747-.203 2.014.465.162.407.367.175.514 0 .472-.415 1.198-1.02 1.578-1.406-.43-2.87.333-5.79 2.113-8.084M15.68 25.433c-.24.169-.274.288.057.612A14.01 14.01 0 0119.66 32.8c.267.986.455 1.992.563 3.008.091 1.926-1.063 2.018-2.31 1.04-1-.91-1.807-2.013-2.374-3.24a27.84 27.84 0 01-1.859-5.581c-.155-.822-.345-.633-.584-.78a1.11 1.11 0 01-.536-1.35c.176-.33.458-.31-.169-.752a32.106 32.106 0 00-6.599-3.135C5.23 21.778 1.8 20.64.778 19.67c-1.205-1.14-.98-1.969.5-2.91a44.162 44.162 0 0110.951-4.563c2.113-.499 5.085-1.18 7.43.5a9.155 9.155 0 013.924-2.728c.64-.25 1.369-.08 1.83.429 1.31 1.624-.373 1.926-1 1.328-.232-.225-.704 0-1.098.225a10.658 10.658 0 00-2.5 2.172c.83 1.772 1.366 5.054-2.275 8.822.648 4.063 3.817 3.514 4.648 3.268 2.507-.703 5.88-3.514 9.5-7.282 1.128-1.16 2.55 0 1.346 1.273-4.014 4.28-8.367 7.127-10.91 7.732-2.542.604-4.887.084-6.042-3.6 0 0-.613.5-1.374 1.076"
+                    mask="url(#d)"
+                  />
+                  <path
+                    fill="#FFF"
+                    d="M15.377 27.036a22.465 22.465 0 002.261 5.932c.17.24 1.564 1.976.317-1.96a9.887 9.887 0 00-2.578-3.972m4.268-12.512a8.114 8.114 0 00-1.408 4.8 6.36 6.36 0 001.408-4.8m-1.07-1.441c-1.697-1.406-4.79-.52-6.339-.127a46.009 46.009 0 00-5.845 2.018c-.916.414-1.627.801-2.409 1.216-.62.316-2.113.998-.852 1.7.808.417 1.638.79 2.486 1.119 1.268.54 3.035 1.244 3.838 1.595 1.002.429 1.974.924 2.91 1.483 1.253-.703 1.746-.21 2.013.471.162.4.367.169.514 0 .472-.414 1.198-1.026 1.578-1.406a10.613 10.613 0 012.113-8.076m-2.902 11.31c-.24.168-.274.281.057.604a14.053 14.053 0 013.923 6.77c.266.986.455 1.992.563 3.008.091 1.926-1.063 2.017-2.31 1.04-1-.911-1.806-2.013-2.374-3.24a27.963 27.963 0 01-1.859-5.581c-.155-.823-.345-.633-.584-.78a1.11 1.11 0 01-.536-1.35c.176-.33.458-.31-.169-.745a31.96 31.96 0 00-6.599-3.135c-.57-.204-3.993-1.336-5.014-2.313-1.212-1.139-.98-1.975.5-2.91a44.562 44.562 0 0110.951-4.562c2.113-.499 5.085-1.18 7.43.5a9.157 9.157 0 013.93-2.714 1.664 1.664 0 011.832.429c1.31 1.623-.374 1.926-1 1.321-.233-.225-.705 0-1.1.24a10.7 10.7 0 00-2.506 2.136c.81 1.785 1.338 5.054-2.303 8.815.648 4.07 3.817 3.514 4.648 3.268 2.507-.703 5.88-3.514 9.5-7.282 1.128-1.153 2.55 0 1.346 1.265-4.015 4.288-8.367 7.128-10.91 7.732-2.542.605-4.887.085-6.042-3.599 0 0-.613.5-1.374 1.076"
+                    mask="url(#d)"
+                  />
+                </g>
+              </svg>
+              <h1 class="sign-in-h1" style="padding-left: 10px">
+                Sign in with PC™id
+              </h1>
+            </div>
+          </div>
+          {%- auth0:widget -%}
+        </div>
+        <div class="pchealth_phone_imagewrapper" style="z-index: 999">
+          <img
+            style="width: 250px"
+            src="https://images.ctfassets.net/y9kx4mbdq4n2/4dH6tYgXD9gdfrkGMwVwiG/522b1199386d2b6f745cd558becfb114/PCHealth-Website-Assets_Landing-Phone_Landing-Phone_3x_1.png"
+          />
+        </div>
+      </div>
+      <div class="pchealth_wave_mask">
+        <img
+          style="width: 900px"
+          src="https://images.ctfassets.net/y9kx4mbdq4n2/5pIXrrqwIqWddYGN69vxPc/a1e0062716d980b0a7e94876f1686a7f/Mask_Group.svg"
+        />
+      </div>
+    </section>
+  </body>
+
+  {% else %}
+  <body>
+    {%- auth0:widget -%}
+  </body>
+  {%- endif -%}
+</html>

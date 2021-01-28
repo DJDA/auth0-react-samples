@@ -1,3 +1,7 @@
+# Auth0 React Sample - Modified for League
+
+- see ./Sign-In-Page-Templates for our "new" experience universal login page ([docs](https://auth0.com/docs/universal-login/new-experience/universal-login-page-templates)).  We have been manually using Postman to call the Management API at `/api/v2/branding/templates/universal-login` to update the template on the hosted sign-in page.
+- we have multiple configs (one for League B2b, one for PCID, and one for League unstyled) in the same react project.  We switch on hostname.  See ./Sample-01/src/configs for details.
 # Auth0 React Samples
 
 [![CircleCI](https://circleci.com/gh/auth0-samples/auth0-react-samples.svg?style=svg)](https://circleci.com/gh/auth0-samples/auth0-react-samples)
